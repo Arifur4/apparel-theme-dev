@@ -2,10 +2,12 @@
 <html>
   <head>
     {{ content_for_header }}
+    {{ 'style.css' | stylesheet_tag }}
   </head>
 
   <body>
     {% render 'header' %}
     {{ content_for_layout }}
+    {{ 'script.js' | script_tag }}
   </body>
 </html>
