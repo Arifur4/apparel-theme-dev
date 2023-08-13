@@ -2,7 +2,7 @@
 <html>
   <head>
     {{ content_for_header }}
-    {{ 'style.css' | stylesheet_tag }}
+    {{ 'style.css' | asset_url | stylesheet_tag }}
   </head>
 
   <body>
