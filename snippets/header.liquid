@@ -4,7 +4,7 @@
   <ul>
     {% for link in linklists.main-menu.links -%}
       <li>{{ link.title | link_to: link.url }}</li>
-    {% endfor %}
+    {%- endfor %}
   </ul>
 
   {% if settings.show_search %}
